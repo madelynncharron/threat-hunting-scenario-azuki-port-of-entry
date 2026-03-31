@@ -112,7 +112,7 @@ DeviceProcessEvents
 
 ---
 
-## Flags (1-20)
+## Flag By Flag Analysis (1-20)
 
 ## 🚩 Flag 1: INITIAL ACCESS - Remote Access Source
 
