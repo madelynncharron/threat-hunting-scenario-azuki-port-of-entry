@@ -233,7 +233,6 @@ The use of `arp.exe -a` shows the attacker began **internal reconnaissance** aft
 | Technique | T1046 | Network Service Discovery |
 | Technique | T1016 | System Network Configuration Discovery |
 
----
 
 ## 🚩Flag 4: DEFENCE EVASION - Malware Staging Directory
 
@@ -281,6 +280,7 @@ The attacker created a hidden staging directory to store and execute malicious p
 | --- | --- | --- |
 | Tactic | TA0005 | Defense Evasion |
 | Technique | T1564.001 | Hidden Files and Directories |
+
 
 ## 🚩 Flag 5: DEFENCE EVASION - File Extension Exclusions
 
@@ -466,7 +466,6 @@ The attacker established persistence by creating a scheduled task that executes 
 | Tactic | TA0003 | Persistence |
 | Technique | T1053.005 | Scheduled Task/Job: Scheduled Task |
 
----
 
 ## 🚩 Flag 9: PERSISTENCE - Scheduled Task Target
 
@@ -571,7 +570,6 @@ The attacker used port 443 to disguise malicious communications as legitimate HT
 | Tactic | TA0011 | Command and Control |
 | Technique | T1071.001 | Web Protocols |
 
----
 
 ## 🚩 Flag 12: CREDENTIAL ACCESS - Credential Theft Tool
 
@@ -619,7 +617,6 @@ The attacker used a renamed version of Mimikatz to dump credentials from memory.
 | Tactic | TA0006 | Credential Access |
 | Technique | T1003 | OS Credential Dumping |
 
----
 
 ## 🚩 Flag 13: CREDENTIAL ACCESS - Memory Extraction Module
 
@@ -649,7 +646,6 @@ The attacker leveraged a specific Mimikatz module to extract plaintext credentia
 | Tactic | TA0006 | Credential Access |
 | Technique | T1003.001 | LSASS Memory |
 
----
 
 ## 🚩 Flag 14: COLLECTION - Data Staging Archive
 
@@ -694,7 +690,6 @@ The attacker consolidated collected data into a compressed archive, likely to st
 | Tactic | TA0009 | Collection |
 | Technique | T1560 | Archive Collected Data |
 
----
 
 ## 🚩 Flag 15: EXFILTRATION - Exfiltration Channel
 
@@ -742,7 +737,6 @@ The attacker exfiltrated data using a Discord webhook, leveraging a legitimate c
 | Tactic | TA0010 | Exfiltration |
 | Technique | T1567 | Exfiltration Over Web Service |
 
----
 
 ## 🚩 Flag 16: ANTI-FORENSICS - Log Tampering
 
@@ -790,7 +784,6 @@ The attacker cleared Windows event logs to hinder forensic investigation. Target
 | Tactic | TA0005 | Defense Evasion |
 | Technique | T1070.001 | Clear Windows Event Logs |
 
----
 
 ## 🚩 Flag 17: IMPACT - Persistence Account
 
@@ -838,7 +831,6 @@ The attacker created a new administrative account to maintain long-term access t
 | Tactic | TA0003 | Persistence |
 | Technique | T1136 | Create Account |
 
----
 
 ## 🚩 Flag 18: EXECUTION - Malicious Script
 
@@ -888,7 +880,6 @@ The attacker executed a PowerShell script with execution policy bypass to avoid 
 | Tactic | TA0002 | Execution |
 | Technique | T1059.001 | PowerShell |
 
----
 
 ## 🚩 Flag 19: LATERAL MOVEMENT - Secondary Target
 
