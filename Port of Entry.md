@@ -1,8 +1,9 @@
 # Threat Hunt Report: Azuki Series - Pt 1: Port of Entry
 
-**Date of Report:** 2026-03-30
-
-**Analyst:** Madelynn Charron
+**Author:** Madelynn Charron  
+**Date:** March 2026  
+**Tools Used:** Microsoft Defender for Endpoint, KQL  
+**Scenario Type:** Simulated Threat Hunt  
 
 ---
 ## Table Of Contents
@@ -11,7 +12,7 @@
 - [Investigation Overview](#investigation-overview)
 - [Attack Path Summary](#attack-path-summary)
 - [Investigation Timeline](#investigation-timeline)
-- [Flag By Flag Analysis (1-20)](#flag-by-flag-analysis-1-20)
+- [Detailed Findings (Flags 1-20)](#detailed-findings-flags)
 - [Indicators of Compromise](#indicators-of-compromise)
 - [MITRE ATT&CK Mapping](#mitre-attck-mapping)
 - [Recommendations](#recommendations)
@@ -23,6 +24,8 @@
 Azuki Import/Export experienced a targeted compromise resulting in the theft of sensitive supplier contracts and pricing data. The attacker gained initial access through a successful Remote Desktop Protocol (RDP) login using compromised credentials associated with the *kenji.sato* account.
 
 Following initial access, the attacker established persistence, disabled security controls, and staged malware within a hidden directory. Credential dumping tools were used to escalate access, enabling lateral movement to additional systems. Sensitive data was collected, compressed, and exfiltrated via a Discord webhook. The attacker maintained command-and-control communication and attempted to evade detection by clearing event logs and creating a backdoor administrative account.
+
+This resulted in the exposure of sensitive business data, directly contributing to financial and competitive loss.
 
 ---
 
@@ -125,7 +128,8 @@ DeviceProcessEvents
 
 ---
 
-## Flag By Flag Analysis (1-20)
+## Detailed Findings (Flags)
+The following sections outline each stage of the attack, including evidence, analysis, and MITRE ATT&CK mapping.
 
 ## 🚩 Flag 1: INITIAL ACCESS - Remote Access Source
 
