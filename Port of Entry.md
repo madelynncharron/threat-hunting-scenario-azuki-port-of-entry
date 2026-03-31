@@ -5,6 +5,19 @@
 **Analyst:** Madelynn Charron
 
 ---
+## Table Of Contents
+- [Executive Summary](#executive-summary)
+- [Background](#background)
+- [Investigation Overview](#investigation-overview)
+- [Attack Path Summary](#attack-path-summary)
+- [Investigation Timeline](#investigation-timeline)
+- [Flag By Flag Analysis (1-20)](#flag-by-flag-analysis-1-20)
+- [Indicators of Compromise](#indicators-of-compromise)
+- [MITRE ATT&CK Mapping](#mitre-attck-mapping)
+- [Recommendations](#recommendations)
+- [Lessons Learned](#lessons-learned)
+
+---
 
 ## Executive Summary
 Azuki Import/Export experienced a targeted compromise resulting in the theft of sensitive supplier contracts and pricing data. The attacker gained initial access through a successful Remote Desktop Protocol (RDP) login using compromised credentials associated with the *kenji.sato* account.
