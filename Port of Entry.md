@@ -1,4 +1,4 @@
-# Threat Hunt Report: Azuki Series - Pt 1: Port of Entry
+# Threat Hunt Report: Port of Entry
 
 **Author:** Madelynn Charron  
 **Date:** March 2026  
